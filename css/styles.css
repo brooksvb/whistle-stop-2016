@@ -1,0 +1,20 @@
+#nav {
+  width: 85%;
+  min-height: 40px;
+  max-height: 120px;
+  margin: auto;
+  background-color: #0F0F0E;
+  border-radius: 15px;
+}
+.vertically-center {
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+.btn {
+  margin: 10px !important;
+}
