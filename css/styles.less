@@ -1,16 +1,21 @@
 //out: styles.css
 
 @black: #0F0F0E;
+@gray: gray;
 
 @pacifico-font-stack: Pacifico, cursive;
 
-#nav {
+body {
+  background-color: @black;
+}
+
+nav {
   width: 85%;
   min-height: 40px;
   max-height: 120px;
   margin: auto;
-  background-color: @black;
-  border-radius: 15px;
+  background-color: @gray;
+  border-radius: 10px;
 }
 
 .vertically-center {
@@ -21,8 +26,4 @@
   -ms-transform: translateY(-50%);
   -o-transform: translateY(-50%);
   transform: translateY(-50%);
-}
-
-.btn {
-  margin: 10px !important;
 }
