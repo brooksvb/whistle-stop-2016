@@ -6,9 +6,12 @@ nav {
   min-height: 40px;
   max-height: 120px;
   margin: auto;
-  background-color: gray;
+  background-color: #51514c;
   border-radius: 10px;
   background: linear-gradient(to bottom right, #0F0F0E, #5e5e58);
+  background: -webkit-linear-gradient(left top, #0F0F0E, #5e5e58);
+  background: -o-linear-gradient(bottom right, #0F0F0E, #5e5e58);
+  background: -moz-linear-gradient(bottom right, #0F0F0E, #5e5e58);
 }
 .vertically-center {
   position: relative;
@@ -19,3 +22,4 @@ nav {
   -o-transform: translateY(-50%);
   transform: translateY(-50%);
 }
+/* This is where mobile css comes in. */

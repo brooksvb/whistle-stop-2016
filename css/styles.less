@@ -2,6 +2,12 @@
 
 @black: #0F0F0E;
 @gray: gray;
+@manatee: #9AA0A8;
+@cambridge: #A7C4B5;
+@onyx: #343F3E;
+@dolphin-gray: #7E8987;
+@outer-space: #454851;
+
 
 @pacifico-font-stack: Pacifico, cursive;
 
@@ -14,9 +20,12 @@ nav {
   min-height: 40px;
   max-height: 120px;
   margin: auto;
-  background-color: @gray;
+  background-color: lighten(@black, 25%);
   border-radius: 10px;
   background: linear-gradient(to bottom right, @black, lighten(@black, 30%));
+  background: -webkit-linear-gradient(left top, @black, lighten(@black, 30%));
+  background: -o-linear-gradient(bottom right, @black, lighten(@black, 30%));
+  background: -moz-linear-gradient(bottom right, @black, lighten(@black, 30%));
 }
 
 .vertically-center {
@@ -27,4 +36,10 @@ nav {
   -ms-transform: translateY(-50%);
   -o-transform: translateY(-50%);
   transform: translateY(-50%);
+}
+
+
+/* This is where mobile css comes in. */
+@media (max-width: 500px) {
+
 }
