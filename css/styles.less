@@ -6,7 +6,7 @@
 @pacifico-font-stack: Pacifico, cursive;
 
 body {
-  background-color: @black;
+  background-color: @black !important;
 }
 
 nav {
@@ -16,6 +16,7 @@ nav {
   margin: auto;
   background-color: @gray;
   border-radius: 10px;
+  background: linear-gradient(to bottom right, @black, lighten(@black, 30%));
 }
 
 .vertically-center {
