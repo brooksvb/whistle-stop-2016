@@ -1,3 +1,6 @@
+#mobile-nav {
+  visibility: hidden;
+}
 body {
   background-color: #0F0F0E !important;
 }
@@ -14,3 +17,11 @@ nav {
   background: -moz-linear-gradient(bottom right, #0F0F0E, #5e5e58);
 }
 /* This is where mobile css comes in. */
+@media (max-width: 500px) {
+  #default-nav {
+    visibility: hidden;
+  }
+  #mobile-nav {
+    visibility: visible;
+  }
+}

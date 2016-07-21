@@ -17,6 +17,10 @@
 
 @pacifico-font-stack: Pacifico, cursive;
 
+#mobile-nav {
+  visibility: hidden;
+}
+
 body {
   background-color: @black !important;
 }
@@ -36,5 +40,11 @@ nav {
 
 /* This is where mobile css comes in. */
 @media (max-width: 500px) {
+  #default-nav {
+    visibility: hidden;
+  }
 
+  #mobile-nav {
+    visibility: visible;
+  }
 }
