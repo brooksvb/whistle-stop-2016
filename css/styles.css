@@ -10,6 +10,7 @@ nav {
   max-height: 180px;
   margin: auto;
   margin-top: 10px;
+  margin-bottom: 2%;
   background-color: #51514c;
   border-radius: 10px;
   background: linear-gradient(to bottom right, #1c1c1a, #44443f);
@@ -23,7 +24,7 @@ nav {
 .my-nav {
   text-align: center;
 }
-.my-nav > h3 {
+nav > h3 {
   text-align: left;
   font-family: Pacifico, cursive;
   font-size: 2.8em;
@@ -76,6 +77,13 @@ nav {
 }
 #contact-btn {
   background-color: #e6cfa8;
+}
+#main-photo {
+  display: block;
+  margin: auto;
+  min-width: 50%;
+  max-width: 100%;
+  border-radius: 10%;
 }
 /* This is where mobile css comes in. */
 @media (max-width: 660px) {

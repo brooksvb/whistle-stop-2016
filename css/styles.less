@@ -53,6 +53,7 @@ nav {
   max-height: 180px;
   margin: auto;
   margin-top: 10px;
+  margin-bottom: 2%;
   background-color: lighten(@black, 25%);
   border-radius: 10px;
   background: linear-gradient(to bottom right, lighten(@black, 5%), lighten(@black, 20%));
@@ -69,7 +70,7 @@ nav {
   text-align: center;
 }
 
-.my-nav > h3 {
+nav > h3 {
   text-align: left;
   font-family: @pacifico-font-stack;
   font-size: 2.8em;
@@ -104,36 +105,39 @@ nav {
   color: lighten(@black, 15%);
 }
 
+// nav buttons
 #home-btn {
   background-color: @home;
 }
-
 #instructors-btn {
   background-color: @instr;
 }
-
 #venues-btn {
   background-color: @venues;
 }
-
 #schedule-btn {
   background-color: @schedule;
 }
-
 #music-btn {
   background-color: @music;
 }
-
 #food-btn {
   background-color: @food;
 }
-
 #staff-btn {
   background-color: @staff;
 }
-
 #contact-btn {
   background-color: @contact;
+}
+
+#main-photo {
+  display: block;
+  margin: auto;
+  min-width: 50%;
+  max-width: 100%;
+  border-radius: 10%;
+
 }
 
 /* This is where mobile css comes in. */
