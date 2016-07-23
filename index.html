@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 
 <html lang="en">
 <head>
@@ -9,10 +9,9 @@
   <meta name="author" content="Brooks Van Buren">
 
   <link rel="stylesheet" href="css/styles.css">
-  <link rel="stylesheet" href="css/bootstrap.min.css">
 
   <!-- alt is cursive -->
-  <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Pacifico|Oswald' rel='stylesheet' type='text/css'>
 
   <!--[if lt IE 9]>
   <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -21,22 +20,26 @@
 
 <body>
   <nav>
-    <ul id="default-nav" class="nav nav-pills">
-      <li role="presentation"><a href="#">Home</a></li>
-      <li role="presentation"><a href="#">Staff and Emcee</a></li>
-      <li role="presentation"><a href="#">Venues</a></li>
-      <li role="presentation"><a href="#">Schedule</a></li>
-      <li role="presentation"><a href="#">Music</a></li>
-      <li role="presentation"><a href="#">Food</a></li>
-      <li role="presentation"><a href="#">Staff and Code of Conduct</a></li>
-      <li role="presentation"><a href="#">Contact Us</a></li>
+    <div class="my-nav">
+      <h3>Whistle Stop 2016</h3>
+      <button id="home-btn" class="active" role="presentation"><a href="#">Home</a></button>
+      <button id="instructors-btn" role="presentation"><a href="#">Instructors and Emcee</a></button>
+      <button id="venues-btn" role="presentation"><a href="#">Venues</a></button>
+      <button id="schedule-btn" role="presentation"><a href="#">Schedule</a></button>
+      <button id="music-btn" role="presentation"><a href="#">Music</a></button>
+      <button id="food-btn" role="presentation"><a href="#">Food</a></button>
+      <button id="staff-btn" role="presentation"><a href="#">Staff and Code of Conduct</a></button>
+      <button id="contact-btn" role="presentation"><a href="#">Contact Us</a></button>
     </ul> <!-- end nav -->
     <div id="mobile-nav">
     </div>
   </nav>
 
+  <div id="main-content">
+    <img src="./img/black_white_swing.jpg">
+  </div>
+
 
   <script src="js/jquery-3.0.0.min.js"></script>
-  <script src="js/bootstrap.min.js"></script>
 </body>
 </html>

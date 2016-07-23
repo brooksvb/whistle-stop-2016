@@ -14,32 +14,130 @@
 @carribean: #09BC8A;
 @cardinal: #C5283D;
 @turquoise: #3DCCC7;
+@purdue-gold: #B1810B;
+
+// button gradient
+@grad-1: #47a1cf;
+@grad-2: #5177d1;
+@grad-3: #635bd4;
+@grad-4: #c470d9;
+@grad-5: #de86af;
+@grad-6: #e19199;
+@grad-7: #e3af9c;
+@grad-8: #e6cfa8;
+
+// nav buttons
+@home: @grad-1;
+@instr: @grad-2;
+@venues: @grad-3;
+@schedule: @grad-4;
+@music: @grad-5;
+@food: @grad-6;
+@staff: @grad-7;
+@contact: @grad-8;
 
 @pacifico-font-stack: Pacifico, cursive;
+@oswald-font-stack: Oswald, sans-serif;
 
 #mobile-nav {
   visibility: hidden;
 }
 
 body {
-  background-color: @black !important;
+  background-color: @black;
 }
 
 nav {
   width: 85%;
   min-height: 40px;
-  max-height: 120px;
+  max-height: 180px;
   margin: auto;
+  margin-top: 10px;
   background-color: lighten(@black, 25%);
   border-radius: 10px;
-  background: linear-gradient(to bottom right, @black, lighten(@black, 30%));
-  background: -webkit-linear-gradient(left top, @black, lighten(@black, 30%));
-  background: -o-linear-gradient(bottom right, @black, lighten(@black, 30%));
-  background: -moz-linear-gradient(bottom right, @black, lighten(@black, 30%));
+  background: linear-gradient(to bottom right, lighten(@black, 5%), lighten(@black, 20%));
+  background: -webkit-linear-gradient(left top, lighten(@black, 5%), lighten(@black, 20%));
+  background: -o-linear-gradient(bottom right, lighten(@black, 5%), lighten(@black, 20%));
+  background: -moz-linear-gradient(bottom right, lighten(@black, 5%), lighten(@black, 20%));
+}
+
+.active {
+  border: 2px solid @cambridge !important;
+}
+
+.my-nav {
+  text-align: center;
+}
+
+.my-nav > h3 {
+  text-align: left;
+  font-family: @pacifico-font-stack;
+  font-size: 2.8em;
+  font-weight: 100;
+  color: @cambridge;
+  margin-top: 0;
+  margin-left: 5px;
+  margin-bottom: 0;
+}
+
+.my-nav > button {
+  margin: 5px 3px 5px 3px;
+  padding-left: 15px;
+  padding-right: 15px;
+  border-radius: 2px;
+  font-family: @oswald-font-stack;
+  font-size: 1.3em;
+  border: 0;
+}
+
+.my-nav > button > a {
+  text-decoration: none;
+  color: @black;
+}
+
+.my-nav > button:hover {
+  -webkit-filter: brightness(1.1);
+  filter: brightness(1.1);
+}
+
+.my-nav > button:hover > a {
+  color: lighten(@black, 15%);
+}
+
+#home-btn {
+  background-color: @home;
+}
+
+#instructors-btn {
+  background-color: @instr;
+}
+
+#venues-btn {
+  background-color: @venues;
+}
+
+#schedule-btn {
+  background-color: @schedule;
+}
+
+#music-btn {
+  background-color: @music;
+}
+
+#food-btn {
+  background-color: @food;
+}
+
+#staff-btn {
+  background-color: @staff;
+}
+
+#contact-btn {
+  background-color: @contact;
 }
 
 /* This is where mobile css comes in. */
-@media (max-width: 500px) {
+@media (max-width: 660px) {
   #default-nav {
     visibility: hidden;
   }

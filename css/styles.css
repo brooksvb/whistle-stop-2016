@@ -2,22 +2,83 @@
   visibility: hidden;
 }
 body {
-  background-color: #0F0F0E !important;
+  background-color: #0F0F0E;
 }
 nav {
   width: 85%;
   min-height: 40px;
-  max-height: 120px;
+  max-height: 180px;
   margin: auto;
+  margin-top: 10px;
   background-color: #51514c;
   border-radius: 10px;
-  background: linear-gradient(to bottom right, #0F0F0E, #5e5e58);
-  background: -webkit-linear-gradient(left top, #0F0F0E, #5e5e58);
-  background: -o-linear-gradient(bottom right, #0F0F0E, #5e5e58);
-  background: -moz-linear-gradient(bottom right, #0F0F0E, #5e5e58);
+  background: linear-gradient(to bottom right, #1c1c1a, #44443f);
+  background: -webkit-linear-gradient(left top, #1c1c1a, #44443f);
+  background: -o-linear-gradient(bottom right, #1c1c1a, #44443f);
+  background: -moz-linear-gradient(bottom right, #1c1c1a, #44443f);
+}
+.active {
+  border: 2px solid #A7C4B5 !important;
+}
+.my-nav {
+  text-align: center;
+}
+.my-nav > h3 {
+  text-align: left;
+  font-family: Pacifico, cursive;
+  font-size: 2.8em;
+  font-weight: 100;
+  color: #A7C4B5;
+  margin-top: 0;
+  margin-left: 5px;
+  margin-bottom: 0;
+}
+.my-nav > button {
+  margin: 5px 3px 5px 3px;
+  padding-left: 15px;
+  padding-right: 15px;
+  border-radius: 2px;
+  font-family: Oswald, sans-serif;
+  font-size: 1.3em;
+  border: 0;
+}
+.my-nav > button > a {
+  text-decoration: none;
+  color: #0F0F0E;
+}
+.my-nav > button:hover {
+  -webkit-filter: brightness(1.1);
+  filter: brightness(1.1);
+}
+.my-nav > button:hover > a {
+  color: #373733;
+}
+#home-btn {
+  background-color: #47a1cf;
+}
+#instructors-btn {
+  background-color: #5177d1;
+}
+#venues-btn {
+  background-color: #635bd4;
+}
+#schedule-btn {
+  background-color: #c470d9;
+}
+#music-btn {
+  background-color: #de86af;
+}
+#food-btn {
+  background-color: #e19199;
+}
+#staff-btn {
+  background-color: #e3af9c;
+}
+#contact-btn {
+  background-color: #e6cfa8;
 }
 /* This is where mobile css comes in. */
-@media (max-width: 500px) {
+@media (max-width: 660px) {
   #default-nav {
     visibility: hidden;
   }
