@@ -43,15 +43,18 @@ nav > h3 {
   font-size: 1.3em;
   border: 0;
 }
-.my-nav > button > a {
+.my-nav > button > a,
+#register-btn > a {
   text-decoration: none;
   color: #0F0F0E;
 }
-.my-nav > button:hover {
+.my-nav > button:hover,
+#register-btn:hover {
   -webkit-filter: brightness(1.1);
   filter: brightness(1.1);
 }
-.my-nav > button:hover > a {
+.my-nav > button:hover > a,
+#register-btn:hover > a {
   color: #373733;
 }
 #home-btn {
@@ -84,6 +87,17 @@ nav > h3 {
   min-width: 50%;
   max-width: 100%;
   border-radius: 10%;
+}
+#register-btn {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  border: 0;
+  background-color: #FB8B24;
+  border-radius: 5px;
+  font-size: 3em;
+  font-family: Oswald, sans-serif;
+  padding: .25em 1em .25em 1em;
 }
 /* This is where mobile css comes in. */
 @media (max-width: 660px) {
