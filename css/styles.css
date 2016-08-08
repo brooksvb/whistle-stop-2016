@@ -1,3 +1,11 @@
+@font-face {
+  font-family: 'Pacifico';
+  src: url('../fonts/Pacifico/Pacifico.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Oswald';
+  src: url('../fonts/Oswald/Oswald-Regular.ttf') format('truetype');
+}
 #mobile-nav {
   visibility: hidden;
 }
@@ -21,12 +29,12 @@ nav {
 .active {
   border: 2px solid #A7C4B5 !important;
 }
-.my-nav {
+#default-nav {
   text-align: center;
 }
 nav > h3 {
   text-align: left;
-  font-family: Pacifico, cursive;
+  font-family: 'Pacifico', cursive;
   font-size: 2.8em;
   font-weight: 100;
   color: #B1810B;
@@ -34,26 +42,27 @@ nav > h3 {
   margin-left: 5px;
   margin-bottom: 0;
 }
-.my-nav > button {
+#default-nav > button {
   margin: 5px 3px 5px 3px;
   padding-left: 15px;
   padding-right: 15px;
   border-radius: 2px;
-  font-family: Oswald, sans-serif;
+  font-family: 'Oswald', sans-serif;
   font-size: 1.3em;
   border: 0;
 }
-.my-nav > button > a,
+#default-nav > button > a,
 #register-btn > a {
   text-decoration: none;
   color: #0F0F0E;
 }
-.my-nav > button:hover,
+nav button:hover,
 #register-btn:hover {
   -webkit-filter: brightness(1.1);
   filter: brightness(1.1);
+  cursor: pointer;
 }
-.my-nav > button:hover > a,
+#default-nav > button:hover > a,
 #register-btn:hover > a {
   color: #373733;
 }
@@ -96,15 +105,53 @@ nav > h3 {
   background-color: #FB8B24;
   border-radius: 5px;
   font-size: 3em;
-  font-family: Oswald, sans-serif;
+  font-family: 'Oswald', sans-serif;
   padding: .25em 1em .25em 1em;
 }
 /* This is where mobile css comes in. */
 @media (max-width: 660px) {
+  nav h3 {
+    font-size: 1.8em;
+  }
   #default-nav {
     visibility: hidden;
+    position: absolute;
   }
   #mobile-nav {
     visibility: visible;
+    position: absolute;
+    right: 40px;
+    top: 20px;
+  }
+  #nav-expand {
+    width: 50px;
+    height: 30px;
+    background-color: transparent;
+    border: none;
+  }
+  #nav-expand:focus {
+    border: 1px dotted #FB8B24;
+    outline: none;
+  }
+  #nav-expand > img {
+    max-width: 100%;
+    max-height: 100%;
+  }
+  #dropdown {
+    visibility: hidden;
+    position: absolute;
+  }
+}
+@media (max-width: 360px) {
+  nav h3 {
+    font-size: 1.3em;
+  }
+  #mobile-nav {
+    top: 15px;
+  }
+}
+@media (max-height: 400px) {
+  #register-btn {
+    font-size: 2em;
   }
 }

@@ -7,11 +7,9 @@
   <title>Whistle Stop 2016 - Purdue Night Train</title>
   <meta name="description" content="Information about the 2016 Swing dance meetup known at Whistle Stop.">
   <meta name="author" content="Brooks Van Buren">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <link rel="stylesheet" href="css/styles.css">
-
-  <!-- alt is cursive -->
-  <link href='https://fonts.googleapis.com/css?family=Pacifico|Oswald' rel='stylesheet' type='text/css'>
 
   <!--[if lt IE 9]>
   <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -21,7 +19,7 @@
 <body>
   <nav>
     <h3>Whistle Stop 2016</h3>
-    <div class="my-nav">
+    <div id="default-nav">
       <button id="home-btn" class="active" role="presentation"><a href="#">Home</a></button>
       <button id="instructors-btn" role="presentation"><a href="#">Instructors and Emcee</a></button>
       <button id="venues-btn" role="presentation"><a href="#">Venues</a></button>
@@ -30,8 +28,11 @@
       <button id="food-btn" role="presentation"><a href="#">Food</a></button>
       <button id="staff-btn" role="presentation"><a href="#">Staff and Code of Conduct</a></button>
       <button id="contact-btn" role="presentation"><a href="#">Contact Us</a></button>
-    </ul> <!-- end nav -->
+    </div> <!-- end nav -->
     <div id="mobile-nav">
+      <button id="nav-expand"><img src="img/mobile_nav_button.png"></button>
+      <div id="dropdown">
+      </div>
     </div>
   </nav>
 
