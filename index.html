@@ -17,32 +17,55 @@
 </head>
 
 <body>
-  <nav>
+  <nav class="inset-shadow">
     <h3>Whistle Stop 2016</h3>
+    <!-- Yes, I know this should be restructured. -->
     <div id="default-nav">
-      <button id="home-btn" class="active" role="presentation"><a href="#">Home</a></button>
-      <button id="instructors-btn" role="presentation"><a href="#">Instructors and Emcee</a></button>
-      <button id="venues-btn" role="presentation"><a href="#">Venues</a></button>
-      <button id="schedule-btn" role="presentation"><a href="#">Schedule</a></button>
-      <button id="music-btn" role="presentation"><a href="#">Music</a></button>
-      <button id="food-btn" role="presentation"><a href="#">Food</a></button>
-      <button id="staff-btn" role="presentation"><a href="#">Staff and Code of Conduct</a></button>
-      <button id="contact-btn" role="presentation"><a href="#">Contact Us</a></button>
+      <button class="active home-btn" href="#" role="presentation">Home</button>
+      <button class="instructors-btn" href="instructors.html" role="presentation">Instructors and Emcee</button>
+      <button class="venues-btn" href="venues.html" role="presentation">Venues</button>
+      <button class="schedule-btn" href="schedule.html" role="presentation">Schedule</button>
+      <button class="music-btn" href="music.html" role="presentation">Music</button>
+      <button class="food-btn" href="food.html" role="presentation">Food</button>
+      <button class="staff-btn" href="staff.html" role="presentation">Staff and CoC</button>
+      <button class="contact-btn" href="contact.html" role="presentation">Contact</button>
     </div> <!-- end nav -->
     <div id="mobile-nav">
       <button id="nav-expand"><img src="img/mobile_nav_button.png"></button>
       <div id="dropdown">
+        <button class="active home-btn" href="#" role="presentation">Home</button>
+        <button class="instructors-btn" href="#" role="presentation">Instructors and Emcee</button>
+        <button class="venues-btn" href="#" role="presentation">Venues</button>
+        <button class="schedule-btn" href="#" role="presentation">Schedule</button>
+        <button class="music-btn" href="#" role="presentation">Music</button>
+        <button class="food-btn" href="#" role="presentation">Food</button>
+        <button class="staff-btn" href="#" role="presentation">Staff and Code of Conduct</button>
+        <button class="contact-btn" href="#" role="presentation">Contact Us</button>
       </div>
     </div>
   </nav>
 
   <div id="main-content">
     <img id="main-photo" src="./img/black_white_swing.jpg">
+
+    <div class="well inset-shadow">
+      <p>
+        Whistle Stop is a yearly Swing dance event hosted by Purdue Night Train.
+        Come experience one of a kind dancing, music, and instuctors!
+      </p>
+    </div>
+
   </div>
 
 
   <button id="register-btn"><a href="#">Register!</a></button>
 
+  <footer class="well inset-shadow">
+    <p>Coded by Brooks Van Buren</p>
+  </footer>
+
   <script src="js/jquery-3.0.0.min.js"></script>
+  <!-- jquery scripts go after the include -->
+  <script src="js/dropdown.js"></script>
 </body>
 </html>

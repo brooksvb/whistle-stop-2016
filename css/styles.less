@@ -46,11 +46,17 @@
   src: url('../fonts/Oswald/Oswald-Regular.ttf') format('truetype');
 }
 
+@font-face {
+  font-family: 'Titillium Web';
+  src: url('../fonts/Titillium_Web/TitilliumWeb-Regular.ttf') format('truetype');
+}
+
 @pacifico-font-stack: 'Pacifico', cursive;
 @oswald-font-stack: 'Oswald', sans-serif;
+@tit-stack: 'Titillium Web', sans-serif;
 
 #mobile-nav {
-  visibility: hidden;
+  display: none;
 }
 
 body {
@@ -91,8 +97,8 @@ nav > h3 {
   margin-bottom: 0;
 }
 
-#default-nav > button {
-  margin: 5px 3px 5px 3px;
+nav button {
+  margin: 5px 3px 10px 3px;
   padding-left: 15px;
   padding-right: 15px;
   border-radius: 2px;
@@ -101,7 +107,7 @@ nav > h3 {
   border: 0;
 }
 
-#default-nav > button > a, #register-btn > a {
+nav button > a, #register-btn > a {
   text-decoration: none;
   color: @black;
 }
@@ -117,28 +123,28 @@ nav button:hover, #register-btn:hover {
 }
 
 // nav buttons
-#home-btn {
+.home-btn {
   background-color: @home;
 }
-#instructors-btn {
+.instructors-btn {
   background-color: @instr;
 }
-#venues-btn {
+.venues-btn {
   background-color: @venues;
 }
-#schedule-btn {
+.schedule-btn {
   background-color: @schedule;
 }
-#music-btn {
+.music-btn {
   background-color: @music;
 }
-#food-btn {
+.food-btn {
   background-color: @food;
 }
-#staff-btn {
+.staff-btn {
   background-color: @staff;
 }
-#contact-btn {
+.contact-btn {
   background-color: @contact;
 }
 
@@ -148,6 +154,38 @@ nav button:hover, #register-btn:hover {
   min-width: 50%;
   max-width: 100%;
   border-radius: 10%;
+}
+
+.well {
+  width: 70%;
+  margin: 5px auto;
+  background-color: @outer-space;
+  border-radius: 5px;
+  padding: 20px 30px;
+  font-size: 1.3em;
+  box-sizing: border-box;
+}
+
+.inset-shadow {
+  -webkit-box-shadow: inset 0 0 8px rgba(0,0,0,0.8);
+  box-shadow: inset 0 0 8px rgba(0,0,0,0.8);
+}
+
+p {
+  text-align: center;
+  color: @cambridge;
+  font-style: @tit-stack;
+}
+
+footer.well {
+  padding: 5px 30px;
+  height: 30px;
+}
+
+footer p {
+  color: fade(@cambridge, 50%);
+  font-size: .8em;
+  margin: 0;
 }
 
 #register-btn {
@@ -169,22 +207,26 @@ nav button:hover, #register-btn:hover {
   }
 
   #default-nav {
-    visibility: hidden;
+    display: none;
     position: absolute;
   }
 
   #mobile-nav {
-    visibility: visible;
+    display: block;
     position: absolute;
+    z-index: 1;
+    cursor: pointer;
     right: 40px;
     top: 20px;
   }
 
   #nav-expand {
-    width: 50px;
-    height: 30px;
+    width: 60px;
+    height: 40px;
     background-color: transparent;
     border: none;
+    position: relative;
+    bottom: 5px;
   }
 
   #nav-expand:focus {
@@ -198,8 +240,20 @@ nav button:hover, #register-btn:hover {
   }
 
   #dropdown {
-    visibility: hidden;
+    display: none;
     position: absolute;
+    right: 0px;
+    top: 40px;
+  }
+
+  #dropdown button {
+    width: 200px;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  #dropdown button > a {
+    font-size: .7em;
   }
 }
 
@@ -210,6 +264,14 @@ nav button:hover, #register-btn:hover {
 
   #mobile-nav {
     top: 15px;
+  }
+
+  #nav-expand {
+    right: -8px;
+  }
+
+  #register-btn {
+    font-size: 2em;
   }
 }
 
