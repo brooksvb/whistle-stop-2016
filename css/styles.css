@@ -94,12 +94,24 @@ nav button:hover,
 .contact-btn {
   background-color: #e6cfa8;
 }
+#main-content {
+  position: relative;
+}
 #main-photo {
   display: block;
   margin: auto;
-  min-width: 50%;
-  max-width: 100%;
-  border-radius: 10%;
+  max-width: 100vw;
+  width: 65vw;
+  border-radius: 5%;
+}
+#main-blurb {
+  position: absolute;
+  width: 35vw;
+  padding: 5px 5px;
+  top: 400px;
+  left: 250px;
+  background-color: rgba(69, 72, 81, 0.9);
+  color: #B1810B;
 }
 .well {
   width: 70%;
@@ -124,7 +136,7 @@ footer.well {
   height: 30px;
 }
 footer p {
-  color: rgba(167, 196, 181, 0.5);
+  color: rgba(177, 129, 11, 0.5);
   font-size: .8em;
   margin: 0;
 }

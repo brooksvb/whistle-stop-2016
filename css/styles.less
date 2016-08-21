@@ -148,12 +148,26 @@ nav button:hover, #register-btn:hover {
   background-color: @contact;
 }
 
+#main-content {
+  position: relative;
+}
+
 #main-photo {
   display: block;
   margin: auto;
-  min-width: 50%;
-  max-width: 100%;
-  border-radius: 10%;
+  max-width: 100vw;
+  width: 65vw;
+  border-radius: 5%;
+}
+
+#main-blurb {
+  position: absolute;
+  width: 35vw;
+  padding: 5px 5px;
+  top: 400px;
+  left: 250px;
+  background-color: fade(@outer-space, 90%);
+  color: @purdue-gold;
 }
 
 .well {
@@ -183,7 +197,7 @@ footer.well {
 }
 
 footer p {
-  color: fade(@cambridge, 50%);
+  color: fade(@purdue-gold, 50%);
   font-size: .8em;
   margin: 0;
 }
