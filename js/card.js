@@ -1,12 +1,3 @@
-// @param: array of numbers
-function highest(numbers) {
-  var max = numbers[0];
-  for (var i = 1; i < numbers.length; i++) {
-    max = numbers[i] ? numbers[i] > max : max;
-  }
-  return max;
-}
-
 $(document).on('ready', function() {
 
   $('.container').on('click', function() {
