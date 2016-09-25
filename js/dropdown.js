@@ -16,6 +16,10 @@ $(document).ready(function() {
   });
 
   $('#default-nav button, #dropdown button').on('click', function() {
+    if ($(this).attr('target') === '_blank') {
+      window.open($(this).attr('href'), '_blank');
+      return;
+    }
     window.location.href = $(this).attr('href');
   });
 });

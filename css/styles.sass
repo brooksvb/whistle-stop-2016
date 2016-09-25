@@ -64,9 +64,19 @@ body
   background-color: $black
   padding: 0
 
+#banner
+  display: block
+  //position: absolute
+  margin-left: auto
+  margin-right: auto
+  max-width: 800px
+  z-index: -1
+  border-radius: 5px
 
 nav
-  width: 85%
+  position: relative
+  transform: translateY(-10px)
+  max-width: 800px
   min-height: 40px
   max-height: 180px
   margin: 0px auto 5px
@@ -76,7 +86,10 @@ nav
   background: -webkit-linear-gradient(left top, lighten($black, 8%), lighten($black, 20%))
   background: -o-linear-gradient(bottom right, lighten($black, 8%), lighten($black, 20%))
   background: -moz-linear-gradient(bottom right, lighten($black, 8%), lighten($black, 20%))
+  z-index: 10
 
+nav h3
+  display: none
 
 .active
   border: 2px solid $cambridge !important
@@ -85,20 +98,8 @@ nav
 #default-nav
   text-align: center
 
-
-nav > h3
-  text-align: left
-  font-family: $pacifico-font-stack
-  font-size: 1.7em
-  font-weight: 100
-  color: $purdue-gold
-  margin-top: 0
-  margin-left: 5px
-  margin-bottom: 0
-
-
 nav button
-  margin: 0px 3px 10px 3px
+  margin: 5px 3px 5px 3px
   padding-left: 15px
   padding-right: 15px
   border-radius: 2px
@@ -156,6 +157,7 @@ nav button:hover, #register-btn:hover
   justify-content: space-between
   align-items: center
   flex-wrap: wrap
+  z-index: 0
 
 
 #main-photo
@@ -167,6 +169,7 @@ nav button:hover, #register-btn:hover
 
 
 #main-blurb
+  position: relative
   max-width: 40vw
   //max-height: 180px
   padding: 20px 15px
@@ -175,8 +178,19 @@ nav button:hover, #register-btn:hover
   color: $purdue-gold
   font-family: $tit-stack
 
+#mc
+  display: block
+  margin: auto
+  max-width: 800px
+
+h2
+  display: block
+  margin: auto
+  color: $purdue-gold
+  font-family: $pacifico-font-stack
 
 .well
+  position: relative
   width: 70%
   margin: 5px auto
   background-color: $box-back
@@ -193,20 +207,26 @@ nav button:hover, #register-btn:hover
 
 p
   text-align: center
-  color: $cambridge
+  color: $purdue-gold
   font-family: $tit-stack
+
+p a
+  color: lighten($purdue-gold, 20%)
 
 
 footer
-  clear: both
-  padding: 5px 30px
-  height: 30px
-
+  padding: 0 !important
+  margin: 20px auto 0px !important
+  height: 20px
+  text-align: center
 
 footer p
-  color: fade($purdue-gold, 50%)
-  font-size: .8em
   margin: 0
+  font-size: 12px
+  color: rgba($purdue-gold, .5)
+
+footer a
+  color: rgba($purdue-gold, .5)
 
 
 #register-btn
@@ -219,13 +239,27 @@ footer p
   font-size: 3em
   font-family: $oswald-font-stack
   padding: .25em 1em .25em 1em
+  z-index: 1
 
 
 /* This is where mobile css comes in. */
 @media (max-width: 660px)
-  nav h3
-    font-size: 1.8em
+  #banner
+    display: none
 
+  nav
+    width: 100vw
+
+  nav h3
+    display: inline
+    font-size: 20px
+    text-align: left
+    font-family: $pacifico-font-stack
+    font-weight: 100
+    color: $purdue-gold
+    margin-top: 0
+    margin-left: 5px
+    margin-bottom: 0
 
   #default-nav
     display: none
@@ -238,16 +272,16 @@ footer p
     z-index: 1
     cursor: pointer
     right: 40px
-    top: 20px
-
+    top: 0px
+    z-index: 10
 
   #nav-expand
     width: 60px
     height: 40px
     background-color: transparent
     border: none
-    position: relative
-    bottom: 5px
+    // position: relative
+    // bottom: 18px
 
 
   #nav-expand:focus
@@ -271,21 +305,27 @@ footer p
     width: 200px
     margin-top: 0
     margin-bottom: 0
+    z-index: 10
 
 
   #dropdown button > a
     font-size: .7em
 
+  .well, #main-blurb
+    max-width: 100%
+    width: 100%
+    margin: 20px auto
+
+  #main-photo
+    max-width: 100%
+    height: auto
+    margin: 10px auto
 
 
 @media (max-width: 360px)
+
   nav h3
     font-size: 1.3em
-
-
-  #mobile-nav
-    top: 15px
-
 
   #nav-expand
     right: -8px
