@@ -69,7 +69,8 @@ body
   //position: absolute
   margin-left: auto
   margin-right: auto
-  max-width: 800px
+  width: 800px
+  max-width: 100%
   z-index: -1
   border-radius: 5px
 
@@ -181,6 +182,28 @@ nav button:hover, #register-btn:hover
   color: $purdue-gold
   font-family: $tit-stack
 
+hr
+  width: 90vw
+  border: none
+  border-top: 2px solid lighten($black, 40%)
+
+
+#venue-content
+  h3
+    text-align: center
+    color: $purdue-gold
+    font-size: 25px
+  p
+    width: 650px
+    max-width: 95vw
+    margin: 15px auto
+  img
+    display: block
+    margin: 15px auto
+    width: 650px
+    max-width: 95vw
+    border: 3px lighten($black, 20%) solid
+
 #mc
   display: block
   margin: auto
@@ -263,6 +286,9 @@ th, td
   max-width: 100%
   height: 400px
 
+@media (max-width: 1049px)
+  #main-content
+    justify-content: center
 
 /* This is where mobile css comes in. */
 @media (max-width: 660px)
@@ -270,7 +296,7 @@ th, td
     display: none
 
   nav
-    width: 100vw
+    width: 95vw
 
   nav h3
     display: inline
@@ -293,8 +319,8 @@ th, td
     position: absolute
     z-index: 1
     cursor: pointer
-    right: 40px
-    top: 0px
+    right: 0px
+    top: -2px
     z-index: 10
 
   #nav-expand
